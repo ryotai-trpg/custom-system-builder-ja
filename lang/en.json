@@ -188,6 +188,8 @@
                 "NotUniqueError": "\"{PROPERTY_NAME}\" must be unique",
                 "RequiredFieldError": "\"{PROPERTY_NAME}\" must be provided"
             },
+            "EscapeHTML": "Escape HTML values in template view?",
+            "EscapeHTMLDescription": "When checked, no HTML will be rendered from the component options, HTML will be displayed as a string instead. This can be useful when Formulas are used to build the HTML.",
             "ExtensibleTable": {
                 "Alignment": "Alignment",
                 "ColumnName": "Column Name",

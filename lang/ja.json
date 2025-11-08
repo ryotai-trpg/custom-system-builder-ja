@@ -188,6 +188,8 @@
                 "NotUniqueError": "\"{PROPERTY_NAME}\" は一意である必要があります",
                 "RequiredFieldError": "\"{PROPERTY_NAME}\" は必須です"
             },
+            "EscapeHTML": "テンプレートビューでHTML値をエスケープしますか？",
+            "EscapeHTMLDescription": "チェックすると、コンポーネントオプションからHTMLがレンダリングされず、代わりにHTMLが文字列として表示されます。これは、HTMLを構築するために数式を使用する場合に便利です。",
             "ExtensibleTable": {
                 "Alignment": "配置",
                 "ColumnName": "列名",
