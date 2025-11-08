@@ -1,0 +1,34 @@
+{
+  "id": "custom-system-builder-ja",
+  "title": "日本語化（Custom System Builder）",
+  "version": "5.0.1",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13
+  },
+  "authors": [
+    {
+      "name": "Ryotai"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.0.1"
+        }
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json"
+    }
+  ],
+  "description": "Custom System Builder（汎用システム）を日本語化するモジュールです。"
+}

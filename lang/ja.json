@@ -1,0 +1,683 @@
+{
+    "CSB": {
+        "ActiveEffects": {
+            "AddToPredefinedButton": {
+                "Text": "定義済みアクティブ効果に追加"
+            },
+            "ConfigureCounter": "カウンター設定を開く",
+            "EffectPriorityLabel": "効果の優先度",
+            "RemoveFromPredefinedButton": {
+                "Text": "定義済みアクティブ効果から削除"
+            },
+            "UpdatePredefinedButton": {
+                "Text": "定義済みアクティブ効果を更新"
+            }
+        },
+        "Attributes": {
+            "AttributeBarsDialog": {
+                "Title": "キャラクターの属性バー"
+            },
+            "EditAttributeBarsDialog": {
+                "MissingData": "各属性バーには名前・値・最大値を入力する必要があります",
+                "Title": "属性バーの設定"
+            },
+            "EditHiddenAttributesDialog": {
+                "MissingData": "各属性には名前と数式を入力する必要があります",
+                "Title": "隠し属性の設定"
+            },
+            "Formula": "数式",
+            "HiddenAttributesDialog": {
+                "Title": "隠し属性"
+            },
+            "Maximum": "最大値",
+            "Name": "名前",
+            "Value": "値"
+        },
+        "ChatCommands": {
+            "ActorNotFound": "ロールに適した選択済みキャラクターがいません",
+            "SheetAltRollCommand": "キャラクターシートから代替ロールを実行",
+            "SheetRollCommand": "キャラクターシートからロールを実行"
+        },
+        "ComponentProperties": {
+            "ActiveEffectContainer": {
+                "ColumnAlign": "配置",
+                "ColumnEnabled": "有効",
+                "ColumnFormat": "形式",
+                "ColumnLabel": "ラベル",
+                "ColumnReadonly": "読み取り専用",
+                "Columns": {
+                    "Active": {
+                        "LabelDefault": "有効",
+                        "Title": "アクティブ効果ステータス列"
+                    },
+                    "Count": {
+                        "LabelDefault": "カウント",
+                        "Title": "アクティブ効果カウント列"
+                    },
+                    "Description": {
+                        "Format": {
+                            "Full": "全文説明",
+                            "Short": "最初の文のみ"
+                        },
+                        "LabelDefault": "説明",
+                        "Title": "アクティブ効果説明列"
+                    },
+                    "Origin": {
+                        "LabelDefault": "発生源",
+                        "Title": "アクティブ効果発生源列"
+                    },
+                    "Ref": {
+                        "LabelDefault": "名前",
+                        "Title": "アクティブ効果参照列"
+                    }
+                },
+                "ColumnSort": "位置",
+                "DeleteActiveEffectDialog": {
+                    "Content": "このアクティブ効果を削除してもよろしいですか？",
+                    "Title": "アクティブ効果削除"
+                },
+                "FilterByTags": {
+                    "FieldLabel": "タグ",
+                    "Title": "タグでアクティブ効果をフィルタ"
+                },
+                "HideEmpty": "空を隠す",
+                "NewActiveEffect": "新規アクティブ効果",
+                "ShowActiveEffectDeleteButton": "アクティブ効果削除ボタンを表示",
+                "ShowConfirmationDialogOnActiveEffectDelete": "アクティブ効果削除時に確認ダイアログを表示",
+                "ShowCreateButton": "作成ボタンを表示",
+                "ShowOnlyOwnEffects": "リンクされたアイテムの効果を非表示",
+                "StatusCounter": "{url}モジュールをインストールして有効化するとカウント列を使用できます",
+                "SuggestExistingEffects": "すでにエンティティに存在する効果も提案する",
+                "TableTitle": "テーブルタイトル"
+            },
+            "AdditionalCssClasses": "追加CSSクラス",
+            "AdvancedConfiguration": "詳細設定",
+            "Alignment": {
+                "AlignCenter": "中央寄せ",
+                "AlignJustify": "両端揃え",
+                "AlignLeft": "左寄せ",
+                "AlignRight": "右寄せ"
+            },
+            "AllowFormula": "数式を許可",
+            "AllowFormulaCreateTimeOnly": "作成時のみ有効（自動更新なし）",
+            "CheckedByDefault": "デフォルトでチェック",
+            "ComponentDialog": {
+                "Delete": {
+                    "Content": "このコンポーネントを削除してもよろしいですか？",
+                    "Title": "コンポーネント削除"
+                },
+                "Edit": {
+                    "Title": "コンポーネント編集"
+                }
+            },
+            "ComponentKey": "コンポーネントキー",
+            "ComponentKeyWarning": "そのキーはシステム内の予約語です。使用すると予期しない結果を招く可能性があります。",
+            "ComponentType": {
+                "ActiveEffectContainer": "アクティブ効果表示",
+                "Checkbox": "チェックボックス",
+                "ConditionalModifierList": "条件付き修正選択",
+                "Dropdown": "ドロップダウン",
+                "DynamicTable": "動的テーブル",
+                "ItemContainer": "アイテム表示",
+                "Label": "ラベル",
+                "Meter": "メーター",
+                "NumberField": "数値フィールド",
+                "Panel": "パネル",
+                "Picture": "画像",
+                "RadioButton": "ラジオボタン",
+                "RichTextArea": "リッチテキストエリア",
+                "SectionTitle": "コンポーネント種別を選択",
+                "Tab": "タブ",
+                "TabbedPanel": "タブ付きパネル",
+                "Table": "テーブル",
+                "TextField": "テキストフィールド"
+            },
+            "ConditionalModifierList": {
+                "DisplayInfoIcon": "情報アイコンを表示",
+                "FilterModifierGroup": "修正グループをフィルタ",
+                "GroupColumnAlign": "グループ列の配置",
+                "GroupColumnName": "グループ列名",
+                "GroupColumnNameDefault": "グループ",
+                "GroupFilterFormula": "詳細 - グループフィルタ数式",
+                "GroupFilterFormulaTitle": "数式はグループ名をカンマ区切りで返す必要があります。設定されている場合、チェックボックス選択を上書きします。",
+                "SelectGroup": "グループを選択（すべての場合は空白）",
+                "SelectionColumnAlign": "選択列の配置",
+                "SelectionColumnName": "選択列名",
+                "SelectionColumnNameDefault": "選択済み"
+            },
+            "DefaultValue": "デフォルト値",
+            "Dropdown": {
+                "OptionsOrigin": {
+                    "Custom": "カスタム",
+                    "DefaultValueTitle": "作成時に選択されるキーです。設定がなければ、ドロップダウンに空のオプションが自動的に追加されます。",
+                    "DynamicTable": "動的テーブル",
+                    "DynamicTableKey": "動的テーブルキー",
+                    "DynamicTableOptionKey": "オプションキーとして使用する動的テーブルの列",
+                    "DynamicTableOptionLabel": "オプションラベルとして使用する動的テーブルの列",
+                    "ExpectedValueType": "期待される値の型：配列／行列（またはカンマ区切りの文字列）",
+                    "Formula": "数式",
+                    "FormulaForKeyOption": "キーオプション用数式",
+                    "FormulaForLabelOption": "ラベルオプション用数式",
+                    "IfNotSet": "未設定の場合、キーオプションを使用します",
+                    "Key": "キー",
+                    "Label": "ラベル",
+                    "Options": "オプション",
+                    "SectionTitle": "ドロップダウンオプションの起源"
+                }
+            },
+            "DynamicTable": {
+                "AddMultipleRowsDialog": {
+                    "AddMultipleRows": "複数行を追加",
+                    "HowManyRows": "いくつの行を追加しますか？",
+                    "RowCountError": "行数は正の整数である必要があります。"
+                },
+                "CanAddRow": "プレイヤーはテーブルに行を追加できますか？",
+                "ConfirmDialogOnDelete": "行削除時に確認ダイアログを表示",
+                "DeleteRowDialog": {
+                    "Content": "この行を削除してもよろしいですか？",
+                    "Title": "行削除"
+                },
+                "ReadonlyPredefined": "事前定義された行ではこの列を読み取り専用にする",
+                "ReadonlyPredefinedInfo": "この列は事前定義された行では読み取り専用になり、テンプレート再読み込み時に値が更新されます。"
+            },
+            "Errors": {
+                "AlphanumericPatternError": "\"{PROPERTY_NAME}\" は大文字小文字のアルファベットとアンダースコアのみで構成された文字列でなければなりません",
+                "DropdownOptionValidationError": "ドロップダウン内のすべてのオプションにはキーが必要です",
+                "DynamicTableAutoFilterValidationError": "保存する前に {KEY} の値を入力してください",
+                "NotGreaterThanZeroError": "\"{PROPERTY_NAME}\" は 0 より大きい必要があります",
+                "NotUniqueError": "\"{PROPERTY_NAME}\" は一意である必要があります",
+                "RequiredFieldError": "\"{PROPERTY_NAME}\" は必須です"
+            },
+            "ExtensibleTable": {
+                "Alignment": "配置",
+                "ColumnName": "列名",
+                "ColumnNameBold": "列名を太字に",
+                "ColumnSort": {
+                    "SortLeft": "コンポーネントを左に並べ替え",
+                    "SortRight": "コンポーネントを右に並べ替え"
+                },
+                "DisplayColumnName": "列名を表示",
+                "HiddenColumn": {
+                    "Title": "非表示列",
+                    "Key": "キー",
+                    "Value": "値"
+                },
+                "LabelWhenEmpty": "空のときに表示するテキスト",
+                "Sort": {
+                    "AddSortingCriteria": "並べ替え条件を追加",
+                    "Auto": "自動",
+                    "ColumnKey": "列キー",
+                    "Disabled": "無効",
+                    "Manual": "手動",
+                    "Operator": "演算子",
+                    "SortOptions": "並べ替えオプション",
+                    "Title": "エントリーを並べ替え",
+                    "Value": "値"
+                },
+                "SortOperator": {
+                    "Ascending": "昇順",
+                    "Descending": "降順",
+                    "Equals": "==",
+                    "NotEquals": "!="
+                }
+            },
+            "InputComponent": {
+                "CustomSizeInvalid": "カスタムサイズは5以上の整数でなければなりません",
+                "Label": "ラベル"
+            },
+            "ItemContainer": {
+                "DeleteItemDialog": {
+                    "Content": "このアイテムを削除してもよろしいですか？",
+                    "Title": "アイテム削除"
+                },
+                "FilterItem": "アイテムをフィルタ",
+                "FilterItemDesc": "アイテムフィルタ数式",
+                "HideEmpty": "空を非表示",
+                "ItemRefColAlign": "アイテム参照列の配置",
+                "ItemRefColLabel": "アイテム参照列ラベル",
+                "ItemRefColLabelDefault": "名前",
+                "SelectTemplate": "テンプレートを選択",
+                "ShowConfirmationDialogOnItemDelete": "アイテム削除時に確認ダイアログを表示",
+                "ShowItemDeleteButton": "アイテム削除ボタンを表示",
+                "ShowItemStatus": "（GM専用）アイテムの状態を表示",
+                "TableTitle": "テーブルタイトル"
+            },
+            "Label": {
+                "Actions": {
+                    "AddAltAsMacro": "代替をマクロとして追加",
+                    "AddAsMacro": "マクロとして追加",
+                    "CopyAltChatCommand": "代替チャットコマンドをコピー",
+                    "CopyAltMacroScript": "代替マクロスクリプトをコピー",
+                    "CopyChatCommand": "チャットコマンドをコピー",
+                    "CopyChatCommandFailure": "以下のテキストボックスからコマンドをコピーしてください。その後、チャットに貼り付けるか、チャットマクロで使用できます。",
+                    "CopyChatCommandSuccess": "チャットコマンドをクリップボードにコピーしました！チャットに貼り付けるか、チャットマクロで使用できます！",
+                    "CopyMacroScript": "マクロスクリプトをコピー",
+                    "CopyMacroScriptFailure": "以下のテキストボックスからスクリプトをコピーしてください。その後、スクリプトマクロで使用できます。",
+                    "CopyMacroScriptSuccess": "マクロスクリプトをクリップボードにコピーしました！スクリプトマクロで使用できます！"
+                },
+                "AddMacroDialog": {
+                    "MacroName": "マクロ名：",
+                    "MacroNameError": "名前を入力してください",
+                    "MacroPageError": "1〜5 のページ番号を入力してください",
+                    "MacroSlot": "マクロスロット：",
+                    "MacroSlotError": "0〜9 のスロット番号を入力してください",
+                    "MacroSlotNumber": "スロット：",
+                    "MacroSlotPage": "ページ：",
+                    "Title": "マクロを追加"
+                },
+                "AltRollMessage": "代替ロールメッセージ",
+                "AltRollMessageDescription": "Shift + クリックでトリガー",
+                "FontAwesomeIconDescription": "Font-Awesome のアイコン名（例：'dice-d20'）を使用できます。公式サイトでアイコンコレクションを確認してください。",
+                "Icon": "ラベルアイコン",
+                "LabelStyle": {
+                    "Boldtext": "太字",
+                    "Button": "ボタン",
+                    "Default": "デフォルト",
+                    "SectionTitle": "ラベルスタイル",
+                    "Subtitle": "サブタイトル",
+                    "Title": "タイトル"
+                },
+                "LabelText": "ラベルテキスト",
+                "Prefix": "ラベル接頭辞",
+                "RollMessage": "ロールメッセージ",
+                "SendRollMessageToChat": "チャットに送信",
+                "Suffix": "ラベル接尾辞",
+                "UseRichTextEditor": "リッチテキストエディタを使用"
+            },
+            "Meter": {
+                "HighValue": "高",
+                "LowValue": "低",
+                "Maximum": "最大",
+                "Minimum": "最小",
+                "OptimumValue": "最適",
+                "TextDisplay": {
+                    "None": "なし",
+                    "SectionTitle": "テキスト表示：",
+                    "Value": "値を表示",
+                    "ValueAndMaximum": "値 / 最大値を表示",
+                    "ValueAsPercentage": "値をパーセンテージで表示"
+                },
+                "Value": "値"
+            },
+            "MinimumEditRole": "コンポーネントやその内容を編集する最低役割",
+            "MinimumPermission": "コンポーネントを表示する最低権限",
+            "MinimumRole": "コンポーネントを表示する最低役割",
+            "NumberField": {
+                "AllowDecimal": "小数を許可",
+                "AllowRelativeModification": "相対修正を許可",
+                "AllowRelativeModificationDescription": "例：「+5」と入力すると現在の値に5を加算します",
+                "ControlsCustomIncrements": {
+                    "Label": "カスタム増分",
+                    "Description": "カンマ区切りの数値リスト。値を変更するボタンとして使用されます"
+                },
+                "ControlStyle": {
+                    "FullControl": "完全コントロール",
+                    "Hover": "ホバーで表示",
+                    "SectionTitle": "コントロールスタイル"
+                },
+                "DisplayStyle": {
+                    "DisplayAsSlider": "スライダーとして表示",
+                    "DisplayAsTextField": "テキストフィールドとして表示",
+                    "SectionTitle": "数値フィールド表示"
+                },
+                "MaxValue": "最大値",
+                "MinValue": "最小値",
+                "ShowFieldControls": "フィールドコントロールを表示",
+                "ShowFieldControlsDescription": "両端に「+」「-」ボタンを表示します"
+            },
+            "Panel": {
+                "Collapsible": {
+                    "No": "いいえ",
+                    "SectionTitle": "パネルを折りたたみ可能にしますか？",
+                    "SectionTitleDefault": "デフォルトで折りたたみますか？",
+                    "Yes": "はい"
+                },
+                "PanelAlign": {
+                    "SectionTitle": "パネル配置"
+                },
+                "PanelLayout": {
+                    "GridOf10": "10列のグリッド",
+                    "GridOf11": "11列のグリッド",
+                    "GridOf12": "12列のグリッド",
+                    "GridOf2": "2列のグリッド",
+                    "GridOf3": "3列のグリッド",
+                    "GridOf4": "4列のグリッド",
+                    "GridOf5": "5列のグリッド",
+                    "GridOf6": "6列のグリッド",
+                    "GridOf7": "7列のグリッド",
+                    "GridOf8": "8列のグリッド",
+                    "GridOf9": "9列のグリッド",
+                    "Horizontal": "水平",
+                    "SectionTitle": "パネルレイアウト",
+                    "Vertical": "垂直"
+                },
+                "PanelTitle": "パネルタイトル",
+                "PanelTitleStyle": "パネルタイトルスタイル"
+            },
+            "Picture": {
+                "Height": "高さ (px)",
+                "Sizing": {
+                    "NoDimension": "サイズを指定しない場合、画像は元のサイズで表示されます。",
+                    "OneDimension": "幅または高さのどちらか一方のみを指定した場合、その寸法に合わせて制約され、縦横比を保持します。",
+                    "TwoDimensions": "幅と高さの両方を指定した場合、指定のサイズにリサイズされます。"
+                },
+                "Width": "幅 (px)"
+            },
+            "Positionning": {
+                "ColSpan": "列の結合",
+                "RowSpan": "行の結合",
+                "Title": "コンポーネント配置（グリッドレイアウトのパネルやテーブルでのみ有効）"
+            },
+            "RadioButton": {
+                "Group": "グループ",
+                "GroupDescription": "数式でキーとして使用されます",
+                "Value": "値"
+            },
+            "Size": {
+                "Auto": "自動",
+                "Custom": "カスタム",
+                "CustomSizeTitle": "カスタムサイズ",
+                "Gigantic": "特大",
+                "Large": "大",
+                "Larger": "より大",
+                "Medium": "中",
+                "SectionTitle": "サイズ",
+                "Small": "小",
+                "Smaller": "より小",
+                "Tiny": "極小"
+            },
+            "Tab": {
+                "Dialog": {
+                    "MissingData": "名前とキーは空にできません",
+                    "TitleCreate": "新規タブ",
+                    "TitleEdit": "タブ編集 {TAB_KEY}"
+                },
+                "EnterNameAndKey": "タブ名とキーを入力してください。",
+                "MinimumPermission": "タブを表示する最低権限",
+                "MinimumRole": "タブを表示する最低役割",
+                "NameAndKeyDescription": "名前は自由ですが、キーは小文字の英数字で、タブ間で一意である必要があります。",
+                "TabKey": "タブキー",
+                "TabName": "タブ名",
+                "TabTooltip": "タブのツールチップ（タブ名にカーソルを合わせたときに表示）",
+                "VisibiltyFormulaDescription": "条件式（${}$ なし）。式がtrueになるとタブが表示されます。"
+            },
+            "TabbedPanel": {
+                "AddTab": "新規タブを追加",
+                "DeleteTab": "現在のタブを削除",
+                "EditTab": "現在のタブを編集",
+                "SortTabToLeft": "タブを左へ移動",
+                "SortTabToRight": "タブを右へ移動"
+            },
+            "Table": {
+                "ColCount": "列数",
+                "RowCount": "行数",
+                "TableLayout": "テーブルレイアウト",
+                "TableLayoutDescription": "各列を左(l)、右(r)、中央(c)に揃えるかを指定できます。例：4 列のテーブルの場合 'cllr'"
+            },
+            "TextArea": {
+                "Dialog": {
+                    "Title": "テキストエディタ"
+                },
+                "Style": {
+                    "DialogEditor": "ダイアログエディタ",
+                    "IconOnly": "アイコンのみ",
+                    "InSheetEditor": "シート内エディタ",
+                    "SectionTitle": "スタイル"
+                }
+            },
+            "TextField": {
+                "AllowedCharacterList": "許可される文字リスト",
+                "AutoComplete": "オートコンプリート数式",
+                "AutoCompleteDescription": "カンマ区切りでオートコンプリートの候補を入力します。数式も使用できます。",
+                "MaxLength": "最大文字数"
+            },
+            "Tooltip": "コンポーネントのツールチップ",
+            "VisibiltyFormula": "表示/非表示の条件式",
+            "VisibiltyFormulaDescription": "条件式がtrueの場合にコンポーネントが表示されます。",
+            "WithoutDelimiters": "数式デリミタ ${}$ なし"
+        },
+        "Display": {
+            "DefaultHeight": "高さ",
+            "DefaultWidth": "幅",
+            "EditDialog": {
+                "DefaultValues": "デフォルト値",
+                "Title": "表示設定を編集"
+            },
+            "PreventSheetResizing": "シートのリサイズ不可",
+            "ProfilPictureSize": "画像サイズ",
+            "SheetSize": "シートサイズ"
+        },
+        "Export": {
+            "ExportButton": "テンプレートをJSONでエクスポート",
+            "ExportDialog": {
+                "Action": "エクスポート",
+                "Subtitle": "エクスポートするテンプレートを選択：",
+                "Title": "テンプレートを選択"
+            },
+            "ImportButton": "テンプレートをJSONでインポート",
+            "ImportDialog": {
+                "Content": "インポートが完了しました。ウィンドウを再読み込みします。",
+                "Title": "インポート完了"
+            }
+        },
+        "Formula": {
+            "Default": "デフォルト",
+            "ERROR": "エラー",
+            "Is": "Is",
+            "NewValue": "新しい値",
+            "Operator": "演算子",
+            "PREFIXERROR": "プレフィックスエラー",
+            "Property": "プロパティ",
+            "ReplaceWith": "置換",
+            "Search": "検索",
+            "SUFFIXERROR": "サフィックスエラー",
+            "Target": "対象",
+            "Where": "条件"
+        },
+        "Items": {
+            "EmbeddedItemsFolderDescription": "このフォルダには、ゲームレベルのアイテムに埋め込まれたすべてのアイテム（キャラクターに埋め込まれていないアイテム）が含まれます"
+        },
+        "Modifier": {
+            "ActiveModifier": "アクティブ",
+            "ConversionDialog": {
+                "Checkbox": "今後このポップアップを表示しない（システム設定から再度有効化できます）",
+                "OpenStatusConfiguration": "ステータス効果修正値はアクティブ効果に変換されました。ステータス設定を確認して、正しいアクティブ効果をリンクしてください。",
+                "Text": "<p>システム内で修正値が検出されました。</p><p>修正値をアクティブ効果に自動変換しますか？</p><p><b>注意：変換前に必ずデータをバックアップしてください。</b></p>",
+                "CheckText": "<p>バージョン4.5.0以降、アイテムおよびステータス効果の修正値は非推奨となり、アクティブ効果が推奨されます。これらは6.0.0およびFoundry 14で削除されます。</p><p>システムは、あなたのワールドに修正値が存在するかどうかを確認できます。ただし、この処理はロード時間を遅くする可能性があります。修正値が存在するか確認しますか？</p><p><b>注意：変換前に必ずデータをバックアップしてください。</b></p>"
+            },
+            "DefaultModifierGroupName": "修正値",
+            "Description": "説明",
+            "EditDialog": {
+                "DeprecationWarning": "バージョン4.5.0以降、アイテムおよびステータス効果の修正値は非推奨となり、アクティブ効果に置き換えられます。これらは6.0.0およびFoundry 14で削除されます。",
+                "MissingData": "各修正値にはキーと数式を入力する必要があります",
+                "ModifierCount": "{COUNT}個の修正値",
+                "Title": "修正値を設定"
+            },
+            "Formula": "値の数式",
+            "Group": "グループ",
+            "ItemModifiers": "アイテム修正値",
+            "Key": "キー",
+            "Operator": "演算子",
+            "PassiveModifier": "パッシブ",
+            "Priority": "優先度",
+            "TemplateModifiers": "テンプレート修正値"
+        },
+        "ProgressBar": {
+            "ReloadingTemplates": "CSB: {NAME} ({UUID}) を再読み込み中… {CURRENT} / {MAX}",
+            "ReloadingTemplatesFinished": "CSB: ドキュメントのテンプレート再読み込み完了 ({MAX}件)"
+        },
+        "ReloadTemplates": {
+            "ActorsInGameDirectory": "ゲームディレクトリ内のキャラクターにリンクされたアイテム",
+            "GameDirectory": "ゲームディレクトリ内の {DOCUMENT_TYPE}",
+            "ItemScenes": "シーン内コマにリンクされたアイテム",
+            "Reload": "再読み込み",
+            "Scenes": "シーン内のコマ",
+            "SceneSelect": {
+                "All": "すべてのシーン",
+                "Current": "現在のシーン",
+                "None": "コマなし"
+            },
+            "SelectReloadPlaces": "再読み込みする {DOCUMENT_TYPE} を選択"
+        },
+        "Settings": {
+            "CustomActiveEffects": {
+                "Hint": "エンティティで提案される定義済みアクティブ効果を設定します",
+                "Name": "アクティブ効果設定"
+            },
+            "CustomStatusEffects": {
+                "EffectName": "名前",
+                "Hint": "コマで利用可能なクイックステータス効果アイコンとその動作を設定します",
+                "Icon": "アイコン",
+                "Id": "ID",
+                "LinkedActiveEffect": "リンクされたアクティブ効果",
+                "Name": "ステータス効果設定",
+                "ResetDialog": {
+                    "Content": "ステータス効果の設定をデフォルトにリセットしてもよろしいですか？",
+                    "Title": "ステータス効果のリセット"
+                },
+                "SpecialStatusEffectInvalid": "特殊ステータス効果 {effect} が無効です。設定されていないか、存在しない可能性があります。",
+                "SpecialStatusEffects": {
+                    "BLIND": "盲目",
+                    "BURROW": "潜行",
+                    "Caption": "これらの効果はFoundryVTT内のさまざまな場所で使用されます。必ず有効なステータス効果にマッピングしてください。",
+                    "DEFEATED": "戦闘不能",
+                    "FLY": "飛行",
+                    "HOVER": "滞空",
+                    "INVISIBLE": "不可視",
+                    "Title": "特殊ステータス効果"
+                },
+                "StatusEffectInvalid": "各ステータス効果にはID、名前、アイコンが必要です。"
+            },
+            "CustomStyle": {
+                "Hint": "カスタムスタイルファイルを指定できます。デフォルトスタイルを使う場合は空白のままにしてください。注意：FoundryではCSSファイルのアップロードは許可されていません。事前にサーバーにアップロードしてから指定してください。",
+                "Name": "CSSスタイルファイル"
+            },
+            "DocumentationButton": "システムドキュメント閲覧",
+            "ExpandRollVisibility": {
+                "Hint": "有効にすると、ロールの秘匿性がシートから送信されるメッセージ全体に適用されます。ウィスパーで動作します。",
+                "Name": "ロールの秘匿性をチャットメッセージ全体に拡張"
+            },
+            "InitiativeFormula": {
+                "Hint": "${}$ なしで数式を入力してください",
+                "Name": "イニシアチブ数式"
+            },
+            "LoggingLevel": {
+                "Hint": "設定レベル以下のログを出力します。大規模なシステムでは、デバッグに設定すると動作が遅くなる可能性があります。",
+                "Levels": {
+                    "Debug": "すべてログ",
+                    "Error": "エラーのみログ",
+                    "Info": "情報以上をログ",
+                    "Log": "デバッグ以外をすべてログ",
+                    "None": "ログしない",
+                    "Warn": "警告以上をログ"
+                },
+                "Name": "システムログレベル"
+            },
+            "ManualEntitySaving": {
+                "Hint": "大きなシートでは、自動保存を無効化してリロード時間を短縮できます。その場合、手動保存ボタンが追加されます。リンクされたアイテムの追加／削除／保存時やシートを閉じた時には自動保存されます。",
+                "Name": "手動エンティティ保存"
+            },
+            "MinimumRoleEditModifiers": {
+                "Hint": "アイテム修正値の表示と編集に必要な最低権限を指定します。",
+                "Name": "アイテム修正値を編集する最低権限"
+            },
+            "MinimumRoleTemplateReload": {
+                "Hint": "テンプレート選択やシート再読み込みに必要な最低権限を指定します。",
+                "Name": "シート再読み込みに必要な最低権限"
+            },
+            "RollIcons": {
+                "Hint": "クリック可能なラベルの横に表示するfontawesomeアイコンを指定できます。例：dice-d20 を入力するとd20アイコンが表示されます。空白の場合は表示されません。",
+                "Name": "ロールアイコン"
+            },
+            "SheetName": "シート",
+            "Show451ConversionPopUp": {
+                "Name": "修正値からアクティブ効果に変換するポップアップを表示"
+            },
+            "ShowHiddenRolls": {
+                "Hint": "この設定を有効にすると、秘匿ロールがGMに表示され、確認できるようになります。",
+                "Name": "秘匿ロールを表示"
+            },
+            "UseApplicationV1": {
+                "Hint": "旧式のApplication-V1ベースのシートを有効化します。これは非推奨で、Foundry V14で削除されます。",
+                "LegacySheetName": "レガシーシート",
+                "Name": "[LEGACY] シートにApplication V1を使用"
+            }
+        },
+        "Sheets": {
+            "ConfigureItemModifier": "アイテム修正値を設定",
+            "InvalidSheet": "無効なシート",
+            "MakeItemUnique": "アイテムを一意に",
+            "OpenTemplateSheet": "テンプレートシートを開く",
+            "ReloadTemplate": "テンプレートを再読み込み",
+            "SeeAttributeBars": "属性バーを見る",
+            "SeeHiddenAttributes": "隠し属性を見る",
+            "Template": "テンプレート"
+        },
+        "TemplateActions": {
+            "AddNewElement": "新しい要素を追加",
+            "ConfigureAttributeBars": "属性バーを設定",
+            "ConfigureHiddenAttributes": "隠し属性を設定",
+            "ConfigureSheetDisplay": "シート表示を設定",
+            "ConfigureStatusEffects": "ステータス効果を設定",
+            "Redo": "やり直す",
+            "ReloadCharacterSheets": "全キャラクターシートを再読み込み",
+            "ReloadItemSheet": "全アイテムシートを再読み込み",
+            "ReloadSheetsDialog": {
+                "Title": "リンクされた全シートを再読み込み"
+            },
+            "Undo": "元に戻す"
+        },
+        "UserInput": {
+            "Value": "値",
+            "Variable": "変数"
+        },
+        "UserMessages": {
+            "CannotMoveItemInItself": "アイテムを自分自身の中に移動することはできません",
+            "Dropdown": {
+                "OptionsLengthError": "{COMPONENT_KEY}: キーとラベルのオプションの長さが一致していません。"
+            },
+            "EmbeddedItemsFolderNotFound": "埋め込みアイテムフォルダが見つかりません。{EMBEDDED_ITEMS_FOLDER_NAME} という名前のアイテムフォルダを作成してください。",
+            "ItemMaxDepth": "アイテムの入れ子は {depth} 階層までしかできません。",
+            "ItemTemplateDeleted": "アイテム {ITEM_NAME} - {ITEM_UUID} で使用されているアイテムテンプレートが {ENTITY_NAME} - {ENTITY_UUID} において削除されました。",
+            "Label": {
+                "ChatCommandeCreationError": "チャットコマンドを作成できませんでした。"
+            },
+            "NumberField": {
+                "ValueNotInteger": "値は整数でなければなりません",
+                "ValueNotNumeric": "値は数値でなければなりません",
+                "ValueNotTooHigh": "値は {VALUE} 未満でなければなりません",
+                "ValueNotTooLow": "値は {VALUE} より大きくなければなりません"
+            },
+            "TabbedPanel": {
+                "DuplicateTabKeEdit": "重複キー {KEY} のタブを編集できませんでした",
+                "DuplicateTabKey": "重複キー {KEY} のタブを作成できませんでした"
+            },
+            "TextField": {
+                "WrongValue": "値に使用できない文字が含まれています"
+            },
+            "UserInputTemplateNotFound": "ユーザー入力テンプレート {TEMPLATE_NAME} が見つかりませんでした。",
+            "WrongDragOnTemplate": "テンプレートにドラッグできるのはサブテンプレートアイテムのみです"
+        }
+    },
+    "EFFECT": {
+        "FIELDS": {
+            "transfer": {
+                "hint": "チェックすると、この効果は親アイテムを所有するキャラクターまたはアイテムに適用されます。",
+                "label": "親に効果を適用"
+            }
+        }
+    },
+    "TYPES": {
+        "Actor": {
+            "_template": "テンプレート",
+            "character": "キャラクター"
+        },
+        "Item": {
+            "_equippableItemTemplate": "装備品アイテムテンプレート",
+            "activeEffectContainer": "定義済みアクティブ効果",
+            "equippableItem": "装備品アイテム",
+            "subTemplate": "サブテンプレート",
+            "userInputTemplate": "ユーザー入力テンプレート"
+        }
+    }
+}
