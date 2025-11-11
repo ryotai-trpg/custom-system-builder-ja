@@ -2,15 +2,22 @@
     "CSB": {
         "ActiveEffects": {
             "AddToPredefinedButton": {
-                "Text": "Add to predefined Active Effects"
+                "Text": "Add to predefined",
+                "Tooltip": "Add Active Effect to the predefined Active Effects list"
             },
             "ConfigureCounter": "Open Counter Configuration",
             "EffectPriorityLabel": "Effect Priority",
             "RemoveFromPredefinedButton": {
-                "Text": "Remove from predefined Active Effects"
+                "Text": "Remove from predefined",
+                "Tooltip": "Remove Active Effect from the predefined Active Effects list"
+            },
+            "Transfer": {
+                "Hint": "If checked, this Effect will be applied to any Actor or Item that owns this Effect's parent Item.",
+                "Name": "Apply Effect to Parent"
             },
             "UpdatePredefinedButton": {
-                "Text": "Update predefined Active Effect"
+                "Text": "Update predefined",
+                "Tooltip": "Update predefined Active Effect in the predefined Active Effects list"
             }
         },
         "Attributes": {
@@ -188,8 +195,6 @@
                 "NotUniqueError": "\"{PROPERTY_NAME}\" must be unique",
                 "RequiredFieldError": "\"{PROPERTY_NAME}\" must be provided"
             },
-            "EscapeHTML": "Escape HTML values in template view?",
-            "EscapeHTMLDescription": "When checked, no HTML will be rendered from the component options, HTML will be displayed as a string instead. This can be useful when Formulas are used to build the HTML.",
             "ExtensibleTable": {
                 "Alignment": "Alignment",
                 "ColumnName": "Column Name",
@@ -204,7 +209,6 @@
                     "Key": "Key",
                     "Value": "Value"
                 },
-                "LabelWhenEmpty": "Text to display when empty",
                 "Sort": {
                     "AddSortingCriteria": "Add sorting criteria",
                     "Auto": "Auto",
@@ -238,6 +242,7 @@
                 "ItemRefColAlign": "Item reference column alignment",
                 "ItemRefColLabel": "Item reference column label",
                 "ItemRefColLabelDefault": "Name",
+                "LabelWhenEmpty": "Text to display when empty",
                 "SelectTemplate": "Select templates",
                 "ShowConfirmationDialogOnItemDelete": "Show confirmation dialog on item delete",
                 "ShowItemDeleteButton": "Show item delete button",
@@ -301,9 +306,9 @@
                 },
                 "Value": "Value"
             },
-            "MinimumEditRole": "Minimum role to edit the component's or its contents value",
             "MinimumPermission": "Minimum permission to see the component",
             "MinimumRole": "Minimum role to see the component",
+            "MinimumEditRole": "Minimum role to edit the component's or its contents value",
             "NumberField": {
                 "AllowDecimal": "Allow decimal number",
                 "AllowRelativeModification": "Allow relative modification",
@@ -366,9 +371,9 @@
                 "Width": "Width (px)"
             },
             "Positionning": {
+                "Title": "Component positionning (only works in a Panel with grid layout and Tables)",
                 "ColSpan": "Column Spanning",
-                "RowSpan": "Row Spanning",
-                "Title": "Component positionning (only works in a Panel with grid layout and Tables)"
+                "RowSpan": "Row Spanning"
             },
             "RadioButton": {
                 "Group": "Group",
@@ -484,8 +489,7 @@
             "ConversionDialog": {
                 "Checkbox": "Do not show this pop-up again (a system parameter is available to show this pop-up again)",
                 "OpenStatusConfiguration": "Status Effects Modifier have been converted to Active Effects. Please review the Status Effects configuration to link the correct Active Effects to the Status",
-                "Text": "<p>Modifiers were found in your system.</p><p>Do you want to automatically convert them into Active Effects?</p><p><b>Caution, please back up your data before proceeding with the conversion.</b></p>",
-                "CheckText": "<p>Starting from version 4.5.0, Item and Status Effect modifiers are deprecated in favor of Active Effects, and will be removed in 6.0.0 and compatibility with Foundry 14.</p><p>The system can check if modifiers exist in your world, but the process can lead to slower loading times. Do you want to check for modifiers existence?</p><p><b>Caution, please back up your data before proceeding with the conversion.</b></p>"
+                "Text": "<p>Starting from version 4.5.0, Item and Status Effect modifiers are deprecated in favor of Active Effects, and will be removed in 6.0.0 and compatibility with Foundry 14.</p><p>Do you want to automatically convert Modifiers into Active Effects?</p><p><b>Caution, please back up your data before proceeding with the conversion.</b></p>"
             },
             "DefaultModifierGroupName": "Modifiers",
             "Description": "Desc.",
@@ -591,7 +595,6 @@
                 "Hint": "You can specify a fontawesome icon name to add an icon next to the clickable labels in the sheet. Example : dice-d20 to display a d20 icon. If empty, no icon will be displayed.",
                 "Name": "Roll Icons"
             },
-            "SheetName": "Sheet",
             "Show451ConversionPopUp": {
                 "Name": "Show Pop-up for the Modifier to Active Effect Conversion"
             },
@@ -599,10 +602,11 @@
                 "Hint": "This setting will show the hidden rolls to GMs for verification purposes.",
                 "Name": "Show hidden rolls"
             },
-            "UseApplicationV1": {
-                "Hint": "This will activate the old Application-V1 based sheets. This is deprecated, and will be removed in Foundry V14.",
+            "UseApplicationV2": {
+                "Hint": "This will activate the new Application-V2 based sheets. This is in preview, meaning it's still drying before becoming the default.",
                 "LegacySheetName": "Legacy sheet",
-                "Name": "[LEGACY] Use Application V1 for sheets"
+                "Name": "[PREVIEW] Use Application V2 for sheets",
+                "SheetName": "Sheet V2"
             }
         },
         "Sheets": {
@@ -661,14 +665,6 @@
             "WrongDragOnTemplate": "Only subtemplates items can be dragged on templates"
         }
     },
-    "EFFECT": {
-        "FIELDS": {
-            "transfer": {
-                "hint": "If checked, this Effect will be applied to any Actor or Item that owns this Effect's parent Item.",
-                "label": "Apply Effect to Parent"
-            }
-        }
-    },
     "TYPES": {
         "Actor": {
             "_template": "Template",
@@ -676,10 +672,10 @@
         },
         "Item": {
             "_equippableItemTemplate": "Equippable Item Template",
-            "activeEffectContainer": "Predefined Active Effects",
             "equippableItem": "Equippable Item",
             "subTemplate": "Subtemplate",
-            "userInputTemplate": "User Input Template"
+            "userInputTemplate": "User Input Template",
+            "activeEffectContainer": "Predefined Active Effects"
         }
     }
 }
