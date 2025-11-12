@@ -2,15 +2,22 @@
     "CSB": {
         "ActiveEffects": {
             "AddToPredefinedButton": {
-                "Text": "定義済みアクティブ効果に追加"
+                "Text": "定義済みリストに追加",
+                "Tooltip": "定義済みアクティブ効果リストにアクティブ効果を追加します"
             },
             "ConfigureCounter": "カウンター設定を開く",
             "EffectPriorityLabel": "効果の優先度",
             "RemoveFromPredefinedButton": {
-                "Text": "定義済みアクティブ効果から削除"
+                "Text": "定義済みリストから削除",
+                "Tooltip": "定義済みアクティブ効果リストからアクティブ効果を削除します"
+            },
+            "Transfer": {
+                "Hint": "チェックすると、この効果は親アイテムを所有するキャラクターまたはアイテムに適用されます",
+                "Name": "親に効果を適用"
             },
             "UpdatePredefinedButton": {
-                "Text": "定義済みアクティブ効果を更新"
+                "Text": "定義済みリストを更新",
+                "Tooltip": "定義済みアクティブ効果リストのアクティブ効果を更新します"
             }
         },
         "Attributes": {
@@ -188,8 +195,6 @@
                 "NotUniqueError": "\"{PROPERTY_NAME}\" は一意である必要があります",
                 "RequiredFieldError": "\"{PROPERTY_NAME}\" は必須です"
             },
-            "EscapeHTML": "テンプレートビューでHTML値をエスケープしますか？",
-            "EscapeHTMLDescription": "チェックすると、コンポーネントオプションからHTMLがレンダリングされず、代わりにHTMLが文字列として表示されます。これは、HTMLを構築するために数式を使用する場合に便利です。",
             "ExtensibleTable": {
                 "Alignment": "配置",
                 "ColumnName": "列名",
@@ -204,7 +209,6 @@
                     "Key": "キー",
                     "Value": "値"
                 },
-                "LabelWhenEmpty": "空のときに表示するテキスト",
                 "Sort": {
                     "AddSortingCriteria": "並べ替え条件を追加",
                     "Auto": "自動",
@@ -238,6 +242,7 @@
                 "ItemRefColAlign": "アイテム参照列の配置",
                 "ItemRefColLabel": "アイテム参照列ラベル",
                 "ItemRefColLabelDefault": "名前",
+                "LabelWhenEmpty": "空のときに表示するテキスト",
                 "SelectTemplate": "テンプレートを選択",
                 "ShowConfirmationDialogOnItemDelete": "アイテム削除時に確認ダイアログを表示",
                 "ShowItemDeleteButton": "アイテム削除ボタンを表示",
@@ -301,9 +306,9 @@
                 },
                 "Value": "値"
             },
-            "MinimumEditRole": "コンポーネントやその内容を編集する最低役割",
             "MinimumPermission": "コンポーネントを表示する最低権限",
             "MinimumRole": "コンポーネントを表示する最低役割",
+            "MinimumEditRole": "コンポーネントやその内容を編集する最低役割",
             "NumberField": {
                 "AllowDecimal": "小数を許可",
                 "AllowRelativeModification": "相対修正を許可",
@@ -366,9 +371,9 @@
                 "Width": "幅 (px)"
             },
             "Positionning": {
+                "Title": "コンポーネント配置（グリッドレイアウトのパネルやテーブルでのみ有効）",
                 "ColSpan": "列の結合",
-                "RowSpan": "行の結合",
-                "Title": "コンポーネント配置（グリッドレイアウトのパネルやテーブルでのみ有効）"
+                "RowSpan": "行の結合"
             },
             "RadioButton": {
                 "Group": "グループ",
@@ -484,8 +489,7 @@
             "ConversionDialog": {
                 "Checkbox": "今後このポップアップを表示しない（システム設定から再度有効化できます）",
                 "OpenStatusConfiguration": "ステータス効果修正値はアクティブ効果に変換されました。ステータス設定を確認して、正しいアクティブ効果をリンクしてください。",
-                "Text": "<p>システム内で修正値が検出されました。</p><p>修正値をアクティブ効果に自動変換しますか？</p><p><b>注意：変換前に必ずデータをバックアップしてください。</b></p>",
-                "CheckText": "<p>バージョン4.5.0以降、アイテムおよびステータス効果の修正値は非推奨となり、アクティブ効果が推奨されます。これらは6.0.0およびFoundry 14で削除されます。</p><p>システムは、あなたのワールドに修正値が存在するかどうかを確認できます。ただし、この処理はロード時間を遅くする可能性があります。修正値が存在するか確認しますか？</p><p><b>注意：変換前に必ずデータをバックアップしてください。</b></p>"
+                "Text": "<p>バージョン4.5.0以降、アイテムおよびステータス効果の修正値は非推奨となり、アクティブ効果が推奨されます。これらは6.0.0およびFoundry 14で削除されます。</p><p>修正値を自動的にアクティブ効果に変換しますか</p><p><b>注意：変換前に必ずデータをバックアップしてください。</b></p>"
             },
             "DefaultModifierGroupName": "修正値",
             "Description": "説明",
@@ -591,7 +595,6 @@
                 "Hint": "クリック可能なラベルの横に表示するfontawesomeアイコンを指定できます。例：dice-d20 を入力するとd20アイコンが表示されます。空白の場合は表示されません。",
                 "Name": "ロールアイコン"
             },
-            "SheetName": "シート",
             "Show451ConversionPopUp": {
                 "Name": "修正値からアクティブ効果に変換するポップアップを表示"
             },
@@ -599,10 +602,11 @@
                 "Hint": "この設定を有効にすると、秘匿ロールがGMに表示され、確認できるようになります。",
                 "Name": "秘匿ロールを表示"
             },
-            "UseApplicationV1": {
-                "Hint": "旧式のApplication-V1ベースのシートを有効化します。これは非推奨で、Foundry V14で削除されます。",
+            "UseApplicationV2": {
+                "Hint": "新しいApplication-V2ベースのシートを有効化します。これはプレビュー段階であり、デフォルト設定となる前に調整中です。",
                 "LegacySheetName": "レガシーシート",
-                "Name": "[LEGACY] シートにApplication V1を使用"
+                "Name": "[PREVIEW] シートにApplication V2を使用",
+                "SheetName": "シートV2"
             }
         },
         "Sheets": {
@@ -661,14 +665,6 @@
             "WrongDragOnTemplate": "テンプレートにドラッグできるのはサブテンプレートアイテムのみです"
         }
     },
-    "EFFECT": {
-        "FIELDS": {
-            "transfer": {
-                "hint": "チェックすると、この効果は親アイテムを所有するキャラクターまたはアイテムに適用されます。",
-                "label": "親に効果を適用"
-            }
-        }
-    },
     "TYPES": {
         "Actor": {
             "_template": "テンプレート",
@@ -676,10 +672,10 @@
         },
         "Item": {
             "_equippableItemTemplate": "装備品アイテムテンプレート",
-            "activeEffectContainer": "定義済みアクティブ効果",
             "equippableItem": "装備品アイテム",
             "subTemplate": "サブテンプレート",
-            "userInputTemplate": "ユーザー入力テンプレート"
+            "userInputTemplate": "ユーザー入力テンプレート",
+            "activeEffectContainer": "定義済みアクティブ効果"
         }
     }
 }
