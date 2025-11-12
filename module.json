@@ -34,7 +34,7 @@
   ],
   "description": "Custom System Builder（汎用システム）を日本語化するモジュールです。",
   "license": "LICENSE",
-  "manifest": "https://github.com/ryotai-trpg/custom-system-builder-ja/releases/download/4.8.5/download/module.json",
+  "manifest": "https://github.com/ryotai-trpg/custom-system-builder-ja/releases/download/4.8.5/module.json",
   "download": "https://github.com/ryotai-trpg/custom-system-builder-ja/releases/download/4.8.5/custom-system-builder-ja.zip",
   "url": "https://github.com/ryotai-trpg/custom-system-builder-ja"
 }
